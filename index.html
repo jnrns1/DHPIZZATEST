@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!-- Random edit: Test comment 2026 -->
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Drafthouse Pizza | Home of the Panzoti</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-tint": "#b42815",
+        "error": "#ba1a1a",
+        "tertiary-fixed-dim": "#fabd00",
+        "inverse-on-surface": "#f4f0eb",
+        "inverse-primary": "#ffb4a6",
+        "primary-container": "#d33f29",
+        "on-background": "#1c1c19",
+        "on-primary-fixed": "#3f0200",
+        "surface-container-low": "#f7f3ee",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary-fixed": "#311400",
+        "tertiary": "#755700",
+        "on-surface": "#1c1c19",
+        "secondary-container": "#fdb381",
+        "secondary-fixed-dim": "#ffb786",
+        "on-secondary": "#ffffff",
+        "on-tertiary-fixed-variant": "#5b4300",
+        "tertiary-fixed": "#ffdf9e",
+        "on-tertiary": "#ffffff",
+        "primary-fixed-dim": "#ffb4a6",
+        "surface-container-high": "#ebe8e3",
+        "surface-container-highest": "#e6e2dd",
+        "on-primary-container": "#fffbff",
+        "on-surface-variant": "#5a413c",
+        "on-secondary-container": "#78431b",
+        "outline-variant": "#e2beb8",
+        "surface-dim": "#ddd9d5",
+        "background": "#fdf9f4",
+        "on-error": "#ffffff",
+        "surface-variant": "#e6e2dd",
+        "error-container": "#ffdad6",
+        "tertiary-container": "#946f00",
+        "on-error-container": "#93000a",
+        "on-tertiary-fixed": "#261a00",
+        "surface": "#fdf9f4",
+        "inverse-surface": "#31302d",
+        "primary-fixed": "#ffdad4",
+        "secondary-fixed": "#ffdcc6",
+        "surface-bright": "#fdf9f4",
+        "on-primary": "#ffffff",
+        "outline": "#8e706b",
+        "secondary": "#885127",
+        "on-tertiary-container": "#fffbff",
+        "on-primary-fixed-variant": "#900d00",
+        "primary": "#b02613",
+        "surface-container": "#f1ede8",
+        "on-secondary-fixed-variant": "#6c3a12"
+      },
+      borderRadius: {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "1.5rem",
+        "full": "9999px"
+      },
+      fontFamily: {
+        "headline": ["Space Grotesk"],
+        "body": ["Manrope"],
+        "label": ["Plus Jakarta Sans"]
+      }
+    }
+  }
+}
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .sauce-gradient { background: linear-gradient(135deg, #b02613 0%, #d33f29 100%); }
+  .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-[#fdf9f4]/80 glass-nav shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="DraftHouse.png" alt="Drafthouse Pizza" class="h-12 w-12 object-contain rounded-full bg-white p-0.5"/>
+      <span class="text-2xl font-black uppercase italic text-[#b02613] font-headline tracking-tight">DRAFTHOUSE PIZZA</span>
+    </a>
+    <div class="hidden md:flex items-center space-x-8 font-headline font-bold tracking-tight">
+      <a class="text-[#b02613] border-b-4 border-[#b02613] pb-1" href="index.html">Home</a>
+      <a class="text-stone-700 hover:text-[#b02613] transition-colors" href="menu.html">Menu</a>
+      <a class="text-stone-700 hover:text-[#b02613] transition-colors" href="locations.html">Locations</a>
+      <a class="text-stone-700 hover:text-[#b02613] transition-colors" href="reserve.html">Reserve</a>
+      <a class="text-stone-700 hover:text-[#b02613] transition-colors" href="careers.html">Careers</a>
+    </div>
+    <a href="menu.html" class="sauce-gradient text-white px-6 py-3 rounded-xl font-headline font-bold text-sm uppercase tracking-wider scale-95 active:scale-90 duration-200 shadow-lg">Order Online</a>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero -->
+  <section class="relative h-[921px] flex items-center overflow-hidden bg-surface-container-highest">
+    <div class="absolute inset-0 z-0">
+      <img alt="Drafthouse Pizza Logo" class="w-full h-full object-contain p-20" src="DraftHouse.png"/>
+    </div>
+    <div class="absolute inset-0 z-0 bg-stone-900/60"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      <div class="max-w-2xl">
+        <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1 rounded-full font-label font-bold text-xs uppercase tracking-widest mb-6">Fresh from Beaver Dam</span>
+        <h1 class="font-headline font-black text-7xl md:text-9xl text-white leading-[0.9] italic uppercase tracking-tighter mb-8 drop-shadow-2xl">
+          Home of the <span class="text-secondary-container">Panzoti.</span>
+        </h1>
+        <div class="flex flex-wrap gap-4">
+          <a href="menu.html" class="sauce-gradient text-white px-10 py-5 rounded-xl font-headline font-black text-xl uppercase tracking-tight shadow-2xl hover:scale-105 transition-transform">Order Now</a>
+          <a href="menu.html" class="bg-white/10 backdrop-blur-md border-2 border-white/20 text-white px-10 py-5 rounded-xl font-headline font-black text-xl uppercase tracking-tight hover:bg-white hover:text-primary transition-all">View Menu</a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute -bottom-1 left-0 right-0 h-24 bg-surface rounded-t-[100px] z-20"></div>
+  </section>
+
+  <!-- Weekly Specials Bento -->
+  <section class="py-24 px-6 bg-surface">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+        <div>
+          <h2 class="font-headline font-black text-5xl md:text-6xl uppercase italic text-primary leading-none">Weekly Crushes</h2>
+          <p class="font-body text-on-surface-variant text-xl mt-4 max-w-md italic">The legends you wait for all week. Hand-crafted, limited runs.</p>
+        </div>
+        <div class="flex gap-2">
+          <div class="w-12 h-1 bg-primary"></div>
+          <div class="w-6 h-1 bg-outline-variant"></div>
+          <div class="w-6 h-1 bg-outline-variant"></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Wild Wednesdays -->
+        <div class="md:col-span-7 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between min-h-[450px] relative overflow-hidden group">
+          <div class="relative z-10">
+            <h3 class="font-headline font-black text-5xl text-primary italic uppercase leading-none mb-4">Wild Wednesdays</h3>
+            <p class="font-body text-on-surface-variant text-lg max-w-sm">Every Wednesday is a surprise. Unique toppings, wild combos, and a vibe you can't find anywhere else.</p>
+          </div>
+          <div class="mt-8 relative z-10">
+            <a href="menu.html" class="inline-block bg-primary text-on-primary px-6 py-3 rounded-xl font-label font-bold text-sm uppercase">See This Week</a>
+          </div>
+          <img class="absolute -right-20 -bottom-10 w-2/3 rotate-12 rounded-xl shadow-2xl group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKjQjVv0dgHcek3Eti1XMy17X_lBAVnh3yBy28LNKFcCyqGiA8vO_pijgVw0Y5VPpyQWqqCkVTm1RTVIkwR1JjlRaG7qGWOtMOCEcyzPNEXoFm0-P6KA674cJ9OvAWLOVR1p1vf-3ZZs4Su2lZjlH0n9RQVIUQnI4aEkdXJUxM_Hz3u3IBfjg7cKbloWEGUhwh339rXBJDcTDVJlRUq8zdBbV1dqhkDWNdoro0CTji2AX3I-3DbgCl1B856a6zupCvNGeM0hfAbL8" alt="Wild Wednesday pizza"/>
+        </div>
+        <!-- Pizza & Bites Thursdays -->
+        <div class="md:col-span-5 bg-secondary-container rounded-xl p-10 flex flex-col justify-between overflow-hidden relative group">
+          <div class="relative z-10">
+            <h3 class="font-headline font-black text-4xl text-on-secondary-container italic uppercase leading-none mb-4">Pizza &amp; Bites<br/>Thursdays</h3>
+          </div>
+          <div class="relative z-10 mt-auto">
+            <div class="bg-on-secondary-container text-secondary-container inline-block px-4 py-2 rounded-lg font-headline font-bold text-2xl mb-4">BUNDLE &amp; SAVE</div>
+            <p class="font-body text-on-secondary-container/80 font-bold">The ultimate pre-weekend fuel.</p>
+          </div>
+          <img class="absolute -top-10 -right-10 w-48 h-48 rounded-full object-cover border-8 border-secondary-container group-hover:rotate-45 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKKOPQxICwvpZF5exGQxnusLCZ6AlU8z4Gl_3zNW7Y4ZfgzrfLOij65o3pK4glGAFPBRbHfq8Ej6AVQN9jC7IvUVyn_ApoV2orCEKmJu_7_iR9pozFe_9FfJh7aPNr6tNNxwQhtrCPc0BWShFoF03jwNdiXzv0kqDFAXVSpCmrvvyC2zbASYviD4p42K-LFPO-yUG6PQStWhnGGh_ZwBBPF-mdQ1mVoS5DQon3dMeZQUYhTUc5SlSx6I3vdALWquoPvdhPdlo3wW4" alt="Thursday Bites"/>
+        </div>
+        <!-- Super Sunday -->
+        <div class="md:col-span-12 bg-inverse-surface rounded-xl p-12 flex flex-col md:flex-row items-center gap-12 overflow-hidden">
+          <div class="flex-1">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="material-symbols-outlined text-tertiary-fixed text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+              <h3 class="font-headline font-black text-5xl md:text-7xl text-white italic uppercase leading-none">Super Sunday</h3>
+            </div>
+            <p class="font-body text-surface-variant text-xl mb-8 max-w-xl">Family sized portions, game-day specials, and the legendary Panzoti party platter. Make Sunday the highlight of your week.</p>
+            <a href="reserve.html" class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded-xl font-headline font-black text-lg uppercase tracking-tight hover:bg-tertiary-fixed-dim transition-colors">Book Your Sunday</a>
+          </div>
+          <div class="flex-1 relative">
+            <div class="bg-primary-container p-4 rounded-xl -rotate-3 scale-110">
+              <img class="rounded-lg w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO_fgyJuF9X6SzJAJzW8QZZNXU6qYCOkYPxHpBBCSGOIpZiLaNm7OhwiduV3ugQ8Ha2Zy354-z2UQi55XVa7mgWcAMVa7pqwGyltg1n_20zwgP8qMNltAYQsHrnqLY5elA3SRD-8co1o5evAvFITp0Yev8xPY3XYFrMwNaqWDlhSF1GZ_AYsPNZTUgcspbGjLhaYRGorYpI5PwPLSrztMFIsH8cZsiSglkQE6mc8a9fbzyZElByKeOc0HwHh8dzRZ3YOrkKDyigRw" alt="Super Sunday spread"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-24 bg-surface-container-low overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div class="relative">
+          <div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl"></div>
+          <div class="relative z-10 bg-white p-4 rounded-[3rem] shadow-xl rotate-2">
+            <img class="rounded-[2.5rem] w-full aspect-[4/5] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVhlRKJ_yXen1iISnfo_Iz4DZB15BYOlo0uHEUjQIkjo6Y4undApDRYfaWxnZ8t9Rgo7QjB4yMkz70MIeA_Jbscr3E5RNavfgfRHgJ8XpUl4j0-GUnj90p2z9gDjx-Sm1Yi4VOSA7tEEKgcuefZHTDIKNuwKLw4oMknj_UYdtBAnbIr-ptvGFSc7jUaWDtSrUsQ1_rF2Ynr9sqY6L_HbUv_bUpbZ91L_wRq6LlA9hccV_qiWLxT_hILIGJBtRXJM48V8akqd_-pwQ" alt="Drafthouse interior"/>
+          </div>
+          <div class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-full shadow-2xl animate-bounce">
+            <span class="font-headline font-black text-white text-3xl italic uppercase leading-none block text-center">EST.<br/>1984</span>
+          </div>
+        </div>
+        <div>
+          <h2 class="font-headline font-black text-6xl uppercase italic text-on-surface leading-none mb-8">Beaver Dam<br/><span class="text-primary">Born &amp; Raised.</span></h2>
+          <div class="space-y-6 font-body text-lg text-on-surface-variant leading-relaxed">
+            <p>Before the "Panzoti" became a local legend, it was just a secret family recipe shared in a small kitchen in Beaver Dam. Drafthouse Pizza wasn't built by a corporation; it was built by the neighborhood.</p>
+            <p>For decades, we've stayed true to our roots: high-quality ingredients, dough made fresh every single morning, and a commitment to being the place where the community gathers for the big moments and the quiet ones.</p>
+            <p class="font-black italic text-primary uppercase text-2xl tracking-tighter">Small town heart. Big time flavor.</p>
+          </div>
+          <a href="story.html" class="mt-10 flex items-center gap-3 font-headline font-black uppercase text-primary hover:gap-5 transition-all group w-fit">
+            Our Full Story
+            <span class="material-symbols-outlined font-bold">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section class="py-24 px-6 bg-surface">
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-surface-container-highest rounded-[3rem] overflow-hidden flex flex-col md:flex-row">
+        <div class="flex-1 p-12 md:p-20">
+          <h2 class="font-headline font-black text-5xl uppercase italic text-primary leading-none mb-4">Pull Up a Chair.</h2>
+          <p class="font-body text-xl text-on-surface-variant mb-12">Visit us at our original Beaver Dam location or check out our newest spot.</p>
+          <div class="space-y-10">
+            <div class="group cursor-pointer">
+              <h4 class="font-headline font-black text-2xl uppercase italic text-on-surface group-hover:text-primary transition-colors">Beaver Dam Central</h4>
+              <p class="font-body text-on-surface-variant">124 Main Street, Beaver Dam, WI 53916</p>
+              <div class="flex items-center gap-4 mt-2 text-sm font-label font-bold text-primary">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">call</span> (920) 555-0123</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">schedule</span> Open until 10PM</span>
+              </div>
+            </div>
+            <div class="group cursor-pointer">
+              <h4 class="font-headline font-black text-2xl uppercase italic text-on-surface group-hover:text-primary transition-colors">Drafthouse North</h4>
+              <p class="font-body text-on-surface-variant">882 N. Stadium Way, Beaver Dam, WI 53916</p>
+              <div class="flex items-center gap-4 mt-2 text-sm font-label font-bold text-primary">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">call</span> (920) 555-0199</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-base">schedule</span> Open until Midnight</span>
+              </div>
+            </div>
+          </div>
+          <a href="locations.html" class="mt-12 inline-block bg-on-surface text-surface px-8 py-4 rounded-xl font-headline font-black text-lg uppercase tracking-tight hover:bg-primary transition-colors">Get Directions</a>
+        </div>
+        <div class="flex-1 min-h-[400px] bg-surface-container-high relative">
+          <img class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUsE6517fQIkf-mtMj_W_pVTcklkb2eP5qDbL14CdcEAoBLysBJ9raoRuTE9R2mK1sxClvdVkT2L1bAF8kayUq75q76VKDuujarNmXT_TlqHWAMOHWrvA2soWYnvKi7FCFAXiBohRejGrSrSdlRJsa1hzbESivZabENxbaKysAocVbE4TQ5JmCBPILpIsNF6NNL3kBpiyk2BaZF0W_aVV6d8sTZVAq5KC6ix6PMRBypeKLtdaoOFE8XY8af3QJwSkda3aeZ91QNMg" alt="Beaver Dam map"/>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-primary text-white p-4 rounded-full shadow-2xl animate-pulse">
+              <span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-stone-900 w-full py-16 px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div class="md:col-span-2">
+        <a href="index.html" class="flex items-center gap-3 mb-4">
+          <img src="DraftHouse.png" alt="Drafthouse Pizza" class="h-12 w-12 object-contain rounded-full bg-white p-0.5"/>
+          <span class="text-3xl font-black text-white italic font-headline tracking-tighter">DRAFTHOUSE PIZZA</span>
+        </a>
+        <p class="text-stone-400 font-body text-lg max-w-sm">Serving up the original Panzoti since 1984. Home-grown, hand-tossed, and community-fed.</p>
+      </div>
+      <div>
+        <h5 class="font-body text-sm uppercase tracking-widest text-[#fdb381] mb-6">Quick Links</h5>
+        <ul class="space-y-4">
+          <li><a class="text-white font-bold hover:translate-x-1 transition-transform inline-block" href="index.html">Home</a></li>
+          <li><a class="text-stone-400 hover:text-[#fdb381] hover:translate-x-1 transition-transform inline-block" href="menu.html">Menu</a></li>
+          <li><a class="text-stone-400 hover:text-[#fdb381] hover:translate-x-1 transition-transform inline-block" href="locations.html">Locations</a></li>
+          <li><a class="text-stone-400 hover:text-[#fdb381] hover:translate-x-1 transition-transform inline-block" href="story.html">Our Story</a></li>
+          <li><a class="text-stone-400 hover:text-[#fdb381] hover:translate-x-1 transition-transform inline-block" href="contact.html">Contact</a></li>
+          <li><a class="text-stone-400 hover:text-[#fdb381] hover:translate-x-1 transition-transform inline-block" href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-body text-sm uppercase tracking-widest text-[#fdb381] mb-6">Newsletter</h5>
+        <p class="text-stone-500 font-body text-sm leading-relaxed mb-4">Join the Pizza Club for exclusive drops and Wednesday codes.</p>
+        <div class="flex rounded-lg overflow-hidden">
+          <input class="bg-stone-800 border-none text-white p-3 w-full text-sm focus:ring-1 focus:ring-primary font-body" placeholder="Your email" type="email"/>
+          <button class="bg-[#b02613] text-white px-4 font-bold"><span class="material-symbols-outlined">send</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="mt-16 pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-stone-500 font-body text-sm">© 2025 Drafthouse Pizza. Home of the Panzoti.</p>
+      <div class="flex gap-6">
+        <a class="text-stone-500 text-xs uppercase tracking-widest hover:text-white transition-colors" href="#">Privacy</a>
+        <a class="text-stone-500 text-xs uppercase tracking-widest hover:text-white transition-colors" href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

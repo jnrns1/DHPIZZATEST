@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reserve a Table | Drafthouse Pizza</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-tint":"#b42815","error":"#ba1a1a","tertiary-fixed-dim":"#fabd00","inverse-on-surface":"#f4f0eb","inverse-primary":"#ffb4a6","primary-container":"#d33f29","on-background":"#1c1c19","on-primary-fixed":"#3f0200","surface-container-low":"#f7f3ee","surface-container-lowest":"#ffffff","on-secondary-fixed":"#311400","tertiary":"#755700","on-surface":"#1c1c19","secondary-container":"#fdb381","secondary-fixed-dim":"#ffb786","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#5b4300","tertiary-fixed":"#ffdf9e","on-tertiary":"#ffffff","primary-fixed-dim":"#ffb4a6","surface-container-high":"#ebe8e3","surface-container-highest":"#e6e2dd","on-primary-container":"#fffbff","on-surface-variant":"#5a413c","on-secondary-container":"#78431b","outline-variant":"#e2beb8","surface-dim":"#ddd9d5","background":"#fdf9f4","on-error":"#ffffff","surface-variant":"#e6e2dd","error-container":"#ffdad6","tertiary-container":"#946f00","on-error-container":"#93000a","on-tertiary-fixed":"#261a00","surface":"#fdf9f4","inverse-surface":"#31302d","primary-fixed":"#ffdad4","secondary-fixed":"#ffdcc6","surface-bright":"#fdf9f4","on-primary":"#ffffff","outline":"#8e706b","secondary":"#885127","on-tertiary-container":"#fffbff","on-primary-fixed-variant":"#900d00","primary":"#b02613","surface-container":"#f1ede8","on-secondary-fixed-variant":"#6c3a12"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"1.5rem","full":"9999px"},fontFamily:{"headline":["Space Grotesk"],"body":["Manrope"],"label":["Plus Jakarta Sans"]}}}}
+</script>
+<style>
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}
+  .sauce-gradient{background:linear-gradient(135deg,#b02613 0%,#d33f29 100%);}
+  .glass-nav{background-color:rgba(253,249,244,0.8);backdrop-filter:blur(20px);}
+</style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="DraftHouse.png" alt="Drafthouse Pizza" class="h-12 w-12 object-contain rounded-full bg-white p-0.5"/>
+      <span class="text-2xl font-black uppercase italic text-[#b02613] font-headline tracking-tight">DRAFTHOUSE PIZZA</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-stone-700 hover:text-[#b02613] transition-colors font-headline font-bold" href="index.html">Home</a>
+      <a class="text-stone-700 hover:text-[#b02613] transition-colors font-headline font-bold" href="menu.html">Menu</a>
+      <a class="text-stone-700 hover:text-[#b02613] transition-colors font-headline font-bold" href="locations.html">Locations</a>
+      <a class="text-[#b02613] border-b-4 border-[#b02613] pb-1 font-headline font-bold" href="reserve.html">Reserve</a>
+      <a class="text-stone-700 hover:text-[#b02613] transition-colors font-headline font-bold" href="careers.html">Careers</a>
+    </div>
+    <a href="menu.html" class="sauce-gradient text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold scale-95 active:scale-90 duration-200">Order Online</a>
+  </div>
+</nav>
+
+<main class="pt-20">
+  <!-- Hero + Form -->
+  <section class="relative min-h-[921px] flex items-center justify-center py-12 px-4">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img class="w-full h-full object-cover brightness-[0.4] scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv3hGMMdW82u2jyM4ufbg59vUcS202tOXKd_xVLLNqCq7tUQOR03LWQvt88K-EXJ4XImgTbz1ODWQAytGDlS2on-NJKTwD_MgxRH16b6dLmIJ7i4UzrgpOad8qAidzwMxLcMa239cwvKxOI-JuNbJJ-4LBOUyQQHHwWAl6enajQYP3qj9GVHwDQSRkkpfs6BbySrLkkuNEpTZ2UgWHUybzSPi3jx3yFcO9C_nGX-V83mzLCyQjnf2yxELcl-L6BDkrE8" alt="Restaurant interior"/>
+    </div>
+    <div class="relative z-10 max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-5 text-white p-6">
+        <h1 class="font-headline font-black text-6xl md:text-8xl leading-[0.9] tracking-tighter mb-6">SAVE YOUR <span class="text-tertiary-fixed">SLICE.</span></h1>
+        <p class="font-body text-xl text-surface-container-low max-w-md mb-8">Experience the warmth of our oven-fired kitchen. Join us for the legendary Panzoti and a pint in our historic brick house.</p>
+        <div class="flex items-center gap-4 text-tertiary-fixed">
+          <span class="material-symbols-outlined">restaurant</span>
+          <span class="font-label font-bold tracking-widest uppercase text-sm">Authentic Craft Pizza</span>
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-2xl">
+          <header class="mb-10">
+            <h2 class="font-headline font-bold text-3xl text-on-surface mb-2">Book a Table</h2>
+            <p class="text-on-surface-variant font-label text-sm uppercase tracking-wider">Select your preferred time and party size</p>
+          </header>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="font-label text-xs font-bold text-on-surface-variant uppercase ml-1">Date</label>
+                <input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface font-body" type="date"/>
+              </div>
+              <div class="space-y-2">
+                <label class="font-label text-xs font-bold text-on-surface-variant uppercase ml-1">Time</label>
+                <select class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface font-body appearance-none">
+                  <option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option>
+                </select>
+              </div>
+              <div class="space-y-2">
+                <label class="font-label text-xs font-bold text-on-surface-variant uppercase ml-1">Number of Guests</label>
+                <input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface font-body" max="20" min="1" placeholder="e.g. 4" type="number"/>
+              </div>
+              <div class="space-y-2">
+                <label class="font-label text-xs font-bold text-on-surface-variant uppercase ml-1">Full Name</label>
+                <input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface font-body" placeholder="John Doe" type="text"/>
+              </div>
+              <div class="space-y-2">
+                <label class="font-label text-xs font-bold text-on-surface-variant uppercase ml-1">Phone Number</label>
+                <input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface font-body" placeholder="(920) 000-0000" type="tel"/>
+              </div>
+              <div class="space-y-2">
+                <label class="font-label text-xs font-bold text-on-surface-variant uppercase ml-1">Email Address</label>
+                <input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface font-body" placeholder="john@example.com" type="email"/>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label class="font-label text-xs font-bold text-on-surface-variant uppercase ml-1">Special Requests</label>
+              <textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-on-surface font-body" placeholder="Allergies, high chairs, or special occasions..." rows="3"></textarea>
+            </div>
+            <button class="w-full sauce-gradient text-on-primary font-headline font-black text-xl py-5 rounded-xl shadow-lg hover:brightness-110 active:scale-[0.98] transition-all uppercase tracking-tight" type="submit">Reserve Now</button>
+            <p class="text-center text-on-surface-variant text-xs font-body opacity-70">By clicking, you agree to our booking policy and terms of service.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Bento -->
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-surface-container-low p-8 rounded-xl flex flex-col justify-between">
+        <span class="material-symbols-outlined text-primary text-4xl mb-6">schedule</span>
+        <div>
+          <h3 class="font-headline font-bold text-2xl mb-4">Dine-in Hours</h3>
+          <ul class="space-y-2 font-body text-on-surface-variant">
+            <li class="flex justify-between"><span>Mon - Thu</span><span>4pm - 10pm</span></li>
+            <li class="flex justify-between"><span>Fri - Sat</span><span>12pm - 11pm</span></li>
+            <li class="flex justify-between"><span>Sunday</span><span>12pm - 9pm</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-between relative overflow-hidden min-h-[300px]">
+        <div class="absolute inset-0 opacity-50">
+          <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVc7iYvEPXJ_vX7SBFQDbLSxPpoxeqxMQ6PcwY6zz4Tujl3sGm80_Tme1duakBg_jL6QraZ30TSVt_NuGNv5WQIzwtygETkl-V2QKUplL6_kxx_YkmOvJX2tTXYAhL8yJfzNZ-eIF1apkK62-PuuFytFrMif-vlGChoP4-NjpuAz_-QiPsitzTZAkNdC1LI9B_oJMcPKZXbeoaxiv5r_vvfZup-z3HwJ5xRNR-tBa6dD842zwZx8VoPQOGPpObgryevThhnVHXTLU" alt="Map"/>
+        </div>
+        <div class="relative z-10 flex flex-col h-full justify-between">
+          <span class="material-symbols-outlined text-primary text-4xl">location_on</span>
+          <div>
+            <h3 class="font-headline font-bold text-2xl mb-2">Find Us</h3>
+            <p class="font-body text-on-surface-variant">124 Main Street<br/>Beaver Dam, WI 53916</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary p-8 rounded-xl text-on-primary flex flex-col justify-between">
+        <span class="material-symbols-outlined text-tertiary-fixed text-4xl mb-6">celebration</span>
+        <div>
+          <h3 class="font-headline font-bold text-2xl mb-4">Hosting a Party?</h3>
+          <p class="font-body opacity-90 mb-6">Our brick back-room is available for private rentals, birthdays, and corporate events.</p>
+          <a class="inline-flex items-center gap-2 font-label font-bold text-sm uppercase tracking-widest border-b-2 border-on-primary pb-1" href="contact.html">Inquire Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-stone-900 text-stone-400 py-16 px-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div class="md:col-span-1">
+      <a href="index.html" class="flex items-center gap-2 mb-4"><img src="DraftHouse.png" alt="Logo" class="h-10 w-10 object-contain rounded-full bg-white p-0.5"/><span class="text-3xl font-black text-white italic font-headline tracking-tight">DRAFTHOUSE PIZZA</span></a>
+      <p class="font-body text-sm leading-relaxed mb-6">Crafting the perfect panzoti since 1984. Neighborhood vibes, world-class dough.</p>
+    </div>
+    <div><h4 class="font-headline text-white font-bold mb-6 uppercase tracking-widest text-sm">Navigation</h4>
+      <ul class="space-y-4 font-body text-sm"><li><a class="hover:text-[#fdb381] transition-colors" href="index.html">Home</a></li><li><a class="hover:text-[#fdb381] transition-colors" href="menu.html">Menu</a></li><li><a class="hover:text-[#fdb381] transition-colors" href="locations.html">Locations</a></li><li><a class="text-white font-bold" href="reserve.html">Reserve</a></li></ul>
+    </div>
+    <div><h4 class="font-headline text-white font-bold mb-6 uppercase tracking-widest text-sm">Connect</h4>
+      <ul class="space-y-4 font-body text-sm"><li><a class="hover:text-[#fdb381] transition-colors" href="#">Instagram</a></li><li><a class="hover:text-[#fdb381] transition-colors" href="#">Facebook</a></li><li><a class="hover:text-[#fdb381] transition-colors" href="contact.html">Contact</a></li></ul>
+    </div>
+    <div><h4 class="font-headline text-white font-bold mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+      <p class="text-xs mb-4">Get the latest slice of news and deals.</p>
+      <div class="flex rounded-lg overflow-hidden"><input class="bg-stone-800 border-none text-white p-3 w-full text-sm focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/><button class="bg-[#b02613] text-white px-4 font-bold"><span class="material-symbols-outlined">send</span></button></div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="font-body text-xs uppercase tracking-widest">© 2025 Drafthouse Pizza. Home of the Panzoti.</p>
+    <div class="flex gap-6 text-xs uppercase tracking-widest"><a class="hover:text-white" href="#">Privacy Policy</a><a class="hover:text-white" href="#">Terms of Service</a></div>
+  </div>
+</footer>
+</body>
+</html>
