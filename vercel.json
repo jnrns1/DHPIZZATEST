@@ -1,9 +1,6 @@
 {
   "buildCommand": "",
   "outputDirectory": ".",
-  "env": {
-    "VERCEL_WEB_ANALYTICS_ID": "@VERCEL_WEB_ANALYTICS_ID"
-  },
   "headers": [
     {
       "source": "/(.+)",
